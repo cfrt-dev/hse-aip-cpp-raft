@@ -1,0 +1,7 @@
+PROJECT_NAME     = "RAFT KV"
+OUTPUT_DIRECTORY = docs/
+INPUT            = include src
+RECURSIVE        = YES
+GENERATE_HTML    = YES
+GENERATE_LATEX   = NO
+EXTRACT_ALL      = YES
