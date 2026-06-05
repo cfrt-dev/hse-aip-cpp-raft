@@ -3,3 +3,5 @@ data/
 logs/
 docs/generated/
 compile_commands.json
+nob
+nob.old

@@ -10,8 +10,9 @@ return values, manual memory management, `pthread` workers, and an `epoll` TCP a
 ## Build
 
 ```sh
-make
-make test
+cc -o nob nob.c
+./nob
+./nob test
 ```
 
 ## Three-node demo
