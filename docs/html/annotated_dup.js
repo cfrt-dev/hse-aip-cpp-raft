@@ -1,12 +1,12 @@
 var annotated_dup =
 [
-    [ "Connection", "structConnection.html", "structConnection" ],
-    [ "KvItem", "structKvItem.html", "structKvItem" ],
-    [ "KvStore", "structKvStore.html", "structKvStore" ],
-    [ "Peer", "structPeer.html", "structPeer" ],
-    [ "RaftConfig", "structRaftConfig.html", "structRaftConfig" ],
-    [ "RaftLogEntry", "structRaftLogEntry.html", "structRaftLogEntry" ],
-    [ "RaftNode", "structRaftNode.html", "structRaftNode" ],
-    [ "ThreadJob", "structThreadJob.html", "structThreadJob" ],
-    [ "ThreadPool", "structThreadPool.html", "structThreadPool" ]
+    [ "Connection", "struct_connection.html", "struct_connection" ],
+    [ "KvItem", "struct_kv_item.html", "struct_kv_item" ],
+    [ "KvStore", "struct_kv_store.html", "struct_kv_store" ],
+    [ "Peer", "struct_peer.html", "struct_peer" ],
+    [ "RaftConfig", "struct_raft_config.html", "struct_raft_config" ],
+    [ "RaftLogEntry", "struct_raft_log_entry.html", "struct_raft_log_entry" ],
+    [ "RaftNode", "struct_raft_node.html", "struct_raft_node" ],
+    [ "ThreadJob", "struct_thread_job.html", "struct_thread_job" ],
+    [ "ThreadPool", "struct_thread_pool.html", "struct_thread_pool" ]
 ];

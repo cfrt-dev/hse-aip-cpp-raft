@@ -1,5 +1,6 @@
 var common_8cpp =
 [
+    [ "add_peer_locked", "common_8cpp.html#a57613500e33b7caa43ae463d92dfd559", null ],
     [ "copy_text", "common_8cpp.html#ae199107b538dca68cff52cd6a5cc2cbb", null ],
     [ "find_peer", "common_8cpp.html#a972a89ea0ce2c188975dfb7d301f7f43", null ],
     [ "is_valid_token", "common_8cpp.html#aad9ffba7724ccea9bf9b30cfcacb0b44", null ],
@@ -10,6 +11,7 @@ var common_8cpp =
     [ "op_from_name", "common_8cpp.html#a62960b3937246aeb18361df5f6fd615a", null ],
     [ "op_name", "common_8cpp.html#ad06fd7eda9a308b1408ec51888827892", null ],
     [ "random_election_timeout", "common_8cpp.html#a5f5cfe7378cc8ad48b55c3a1d22373bc", null ],
+    [ "remove_peer_locked", "common_8cpp.html#af2b77b94ea2972dae9d76c51b9cc836a", null ],
     [ "role_name", "common_8cpp.html#a603b1656218956d896d305a66b7eb8f5", null ],
     [ "set_nonblock", "common_8cpp.html#ac935b3215392208e0679fa1f0e6b1e91", null ]
 ];

@@ -1,11 +1,7 @@
 var searchData=
 [
-  ['network_2ecpp_0',['network.cpp',['../network_8cpp.html',1,'']]],
-  ['network_5floop_1',['network_loop',['../network_8cpp.html#a9d56f143d34c06b179dd8643681b27c2',1,'network_loop(void *arg):&#160;network.cpp'],['../raft__internal_8h.html#a9d56f143d34c06b179dd8643681b27c2',1,'network_loop(void *arg):&#160;network.cpp']]],
-  ['network_5fthread_2',['network_thread',['../structRaftNode.html#aa6368e5c4a99dd21560d418d48a25ad7',1,'RaftNode']]],
-  ['next_3',['next',['../structThreadJob.html#ac8f8d49171c9dd7ee918596530c46744',1,'ThreadJob']]],
-  ['next_5findex_4',['next_index',['../structPeer.html#a7903faa514cd923ba0b806e43fffdc97',1,'Peer']]],
-  ['node_5',['node',['../structThreadJob.html#a4e53f5cf1b7da48ac6359757c7d6a9f4',1,'ThreadJob']]],
-  ['node_2ecpp_6',['node.cpp',['../node_8cpp.html',1,'']]],
-  ['now_5fms_7',['now_ms',['../common_8cpp.html#a71f128c0a34946b5a6ffcc094de95fc0',1,'now_ms(void):&#160;common.cpp'],['../raft__internal_8h.html#a71f128c0a34946b5a6ffcc094de95fc0',1,'now_ms(void):&#160;common.cpp']]]
+  ['op_0',['op',['../struct_raft_log_entry.html#aa4f301946f03f35242942f830ffc91e8',1,'RaftLogEntry']]],
+  ['op_5ffrom_5fname_1',['op_from_name',['../common_8cpp.html#a62960b3937246aeb18361df5f6fd615a',1,'op_from_name(const char *name):&#160;common.cpp'],['../raft__internal_8hpp.html#a62960b3937246aeb18361df5f6fd615a',1,'op_from_name(const char *name):&#160;common.cpp']]],
+  ['op_5fname_2',['op_name',['../common_8cpp.html#ad06fd7eda9a308b1408ec51888827892',1,'op_name(KvOp op):&#160;common.cpp'],['../raft__internal_8hpp.html#ad06fd7eda9a308b1408ec51888827892',1,'op_name(KvOp op):&#160;common.cpp']]],
+  ['open_5fevent_5flog_3',['open_event_log',['../logging_8cpp.html#a1f90bd8c21dcc4b0485411ac3bc774c9',1,'open_event_log(RaftNode *node):&#160;logging.cpp'],['../raft__internal_8hpp.html#a1f90bd8c21dcc4b0485411ac3bc774c9',1,'open_event_log(RaftNode *node):&#160;logging.cpp']]]
 ];

@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['network_5fthread_0',['network_thread',['../structRaftNode.html#aa6368e5c4a99dd21560d418d48a25ad7',1,'RaftNode']]],
-  ['next_1',['next',['../structThreadJob.html#ac8f8d49171c9dd7ee918596530c46744',1,'ThreadJob']]],
-  ['next_5findex_2',['next_index',['../structPeer.html#a7903faa514cd923ba0b806e43fffdc97',1,'Peer']]],
-  ['node_3',['node',['../structThreadJob.html#a4e53f5cf1b7da48ac6359757c7d6a9f4',1,'ThreadJob']]]
+  ['op_0',['op',['../struct_raft_log_entry.html#aa4f301946f03f35242942f830ffc91e8',1,'RaftLogEntry']]]
 ];

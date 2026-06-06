@@ -1,12 +1,11 @@
 var searchData=
 [
-  ['send_5fappend_5fto_5fpeer_0',['send_append_to_peer',['../network_8cpp.html#a62f6f3397e2c00b1a9b06346bbe2c99f',1,'send_append_to_peer(RaftNode *node, uint32_t peer_id):&#160;network.cpp'],['../raft__internal_8h.html#a62f6f3397e2c00b1a9b06346bbe2c99f',1,'send_append_to_peer(RaftNode *node, uint32_t peer_id):&#160;network.cpp']]],
-  ['send_5fto_5fpeer_1',['send_to_peer',['../network_8cpp.html#a2734a86472b68c4197405715a82e2392',1,'send_to_peer(RaftNode *node, uint32_t peer_id, const char *line):&#160;network.cpp'],['../raft__internal_8h.html#a2734a86472b68c4197405715a82e2392',1,'send_to_peer(RaftNode *node, uint32_t peer_id, const char *line):&#160;network.cpp']]],
-  ['server_5ffd_2',['server_fd',['../structRaftNode.html#a7518cbf49515610751e25278aa13602e',1,'RaftNode']]],
-  ['set_5fnonblock_3',['set_nonblock',['../common_8cpp.html#ac935b3215392208e0679fa1f0e6b1e91',1,'set_nonblock(int32_t fd):&#160;common.cpp'],['../raft__internal_8h.html#ac935b3215392208e0679fa1f0e6b1e91',1,'set_nonblock(int32_t fd):&#160;common.cpp']]],
-  ['start_5felection_4',['start_election',['../raft__core_8cpp.html#aa9e9b1f905e9b3f23c743b6dfbca9f80',1,'start_election(RaftNode *node):&#160;raft_core.cpp'],['../raft__internal_8h.html#aa9e9b1f905e9b3f23c743b6dfbca9f80',1,'start_election(RaftNode *node):&#160;raft_core.cpp']]],
-  ['stdin_5floop_5',['stdin_loop',['../node_8cpp.html#a1a0c7efb186f7ac92f0dc34cce2d5985',1,'stdin_loop(void *arg):&#160;node.cpp'],['../raft__internal_8h.html#a1a0c7efb186f7ac92f0dc34cce2d5985',1,'stdin_loop(void *arg):&#160;node.cpp']]],
-  ['stdin_5fthread_6',['stdin_thread',['../structRaftNode.html#ae4977a130c36158de9ec6b9a3c865993',1,'RaftNode']]],
-  ['stop_7',['stop',['../structThreadPool.html#a800f7039f49d58f23f629d99b8215977',1,'ThreadPool']]],
-  ['store_8',['store',['../structRaftNode.html#a346fbc22222955325c887392378b439d',1,'RaftNode']]]
+  ['tail_0',['tail',['../struct_thread_pool.html#adbbbdbb8c94d7862da59566e9cefbf64',1,'ThreadPool']]],
+  ['term_1',['term',['../struct_raft_log_entry.html#ac697a295a209f07d9cc005b82ed3784d',1,'RaftLogEntry']]],
+  ['thread_5fcount_2',['thread_count',['../struct_thread_pool.html#a0d258cca5d1c5d624f78caa76f33d025',1,'ThreadPool']]],
+  ['threadjob_3',['ThreadJob',['../struct_thread_job.html',1,'ThreadJob'],['../raft__kv_8hpp.html#a3a6e21570d8367237d0a9d0617ab3baa',1,'ThreadJob:&#160;raft_kv.hpp']]],
+  ['threadpool_4',['ThreadPool',['../struct_thread_pool.html',1,'ThreadPool'],['../raft__kv_8hpp.html#a41038e134a98ed33feac12f376a22a9d',1,'ThreadPool:&#160;raft_kv.hpp']]],
+  ['threads_5',['threads',['../struct_thread_pool.html#afea06c41231e467f90045cf71e21d040',1,'ThreadPool']]],
+  ['ticker_5floop_6',['ticker_loop',['../raft__core_8cpp.html#a1b2eec62268278fcfb44f887ae73ef5e',1,'ticker_loop(void *arg):&#160;raft_core.cpp'],['../raft__internal_8hpp.html#a1b2eec62268278fcfb44f887ae73ef5e',1,'ticker_loop(void *arg):&#160;raft_core.cpp']]],
+  ['ticker_5fthread_7',['ticker_thread',['../struct_raft_node.html#a43e0cc80378b6b1f828324166e454e24',1,'RaftNode']]]
 ];

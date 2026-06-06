@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['server_5ffd_0',['server_fd',['../structRaftNode.html#a7518cbf49515610751e25278aa13602e',1,'RaftNode']]],
-  ['stdin_5fthread_1',['stdin_thread',['../structRaftNode.html#ae4977a130c36158de9ec6b9a3c865993',1,'RaftNode']]],
-  ['stop_2',['stop',['../structThreadPool.html#a800f7039f49d58f23f629d99b8215977',1,'ThreadPool']]],
-  ['store_3',['store',['../structRaftNode.html#a346fbc22222955325c887392378b439d',1,'RaftNode']]]
+  ['tail_0',['tail',['../struct_thread_pool.html#adbbbdbb8c94d7862da59566e9cefbf64',1,'ThreadPool']]],
+  ['term_1',['term',['../struct_raft_log_entry.html#ac697a295a209f07d9cc005b82ed3784d',1,'RaftLogEntry']]],
+  ['thread_5fcount_2',['thread_count',['../struct_thread_pool.html#a0d258cca5d1c5d624f78caa76f33d025',1,'ThreadPool']]],
+  ['threads_3',['threads',['../struct_thread_pool.html#afea06c41231e467f90045cf71e21d040',1,'ThreadPool']]],
+  ['ticker_5fthread_4',['ticker_thread',['../struct_raft_node.html#a43e0cc80378b6b1f828324166e454e24',1,'RaftNode']]]
 ];

@@ -7,5 +7,5 @@ var dir_68267d1309a1af8e8297ef4c3efbcdba =
     [ "network.cpp", "network_8cpp.html", "network_8cpp" ],
     [ "node.cpp", "node_8cpp.html", "node_8cpp" ],
     [ "raft_core.cpp", "raft__core_8cpp.html", "raft__core_8cpp" ],
-    [ "raft_internal.h", "raft__internal_8h.html", "raft__internal_8h" ]
+    [ "raft_internal.hpp", "raft__internal_8hpp.html", "raft__internal_8hpp" ]
 ];
