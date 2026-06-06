@@ -1,7 +1,7 @@
 #ifndef RAFT_INTERNAL_H
 #define RAFT_INTERNAL_H
 
-#include "raft_kv.h"
+#include "raft_kv.hpp"
 
 #include <stdint.h>
 

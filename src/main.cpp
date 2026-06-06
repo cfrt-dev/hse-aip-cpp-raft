@@ -1,4 +1,4 @@
-#include "raft_kv.h"
+#include "raft_kv.hpp"
 
 #include <signal.h>
 #include <stdio.h>

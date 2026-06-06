@@ -1,4 +1,4 @@
-#include "raft_internal.h"
+#include "raft_internal.hpp"
 
 #include <arpa/inet.h>
 #include <errno.h>

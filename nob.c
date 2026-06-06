@@ -16,12 +16,12 @@ static const char *app_path = "build/raft_kv";
 static const char *test_path = "build/raft_kv_tests";
 
 static const char *raft_deps[] = {
-    "include/raft_kv.h",
-    "src/raft_internal.h",
+    "include/raft_kv.hpp",
+    "src/raft_internal.hpp",
 };
 
 static const char *test_deps[] = {
-    "include/raft_kv.h",
+    "include/raft_kv.hpp",
 };
 
 static const Build_Unit raft_units[] = {
@@ -85,7 +85,7 @@ static bool build_object(const Build_Unit *unit) {
 
     Nob_Cmd cmd = {0};
     nob_cmd_append(&cmd, env_or_default("CXX", "clang++"));
-    append_words(&cmd, env_or_default("CXXFLAGS", "-std=c++17 -Wall -Wextra -Wpedantic -Iinclude -Oz"));
+    append_words(&cmd, env_or_default("CXXFLAGS", "-std=c++20 -Wall -Wextra -Wpedantic -Iinclude -Oz"));
     nob_cmd_append(&cmd, "-c", unit->src, "-o", unit->obj);
     return nob_cmd_run(&cmd);
 }
