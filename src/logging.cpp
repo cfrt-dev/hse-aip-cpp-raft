@@ -23,10 +23,9 @@ void log_event(RaftNode *node, const char *format, ...) {
 
 void open_event_log(RaftNode *node) {
     char dir[RAFT_MAX_PATH];
-    char *slash;
-
     copy_text(dir, sizeof(dir), node->log_path);
-    slash = strrchr(dir, '/');
+
+    char *slash = strrchr(dir, '/');
     if (slash != NULL) {
         *slash = '\0';
         mkdir(dir, 0755);

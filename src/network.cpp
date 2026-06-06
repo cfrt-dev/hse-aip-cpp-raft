@@ -12,16 +12,12 @@
 #include <unistd.h>
 
 int32_t connect_send(const char *host, uint16_t port, const char *line) {
-    int32_t fd;
-    int32_t rc;
     int32_t err;
     socklen_t err_len;
     struct sockaddr_in addr;
     struct pollfd pfd;
-    size_t length;
-    ssize_t sent;
 
-    fd = socket(AF_INET, SOCK_STREAM, 0);
+    int32_t fd = socket(AF_INET, SOCK_STREAM, 0);
     if (fd < 0) {
         return -1;
     }
@@ -35,11 +31,12 @@ int32_t connect_send(const char *host, uint16_t port, const char *line) {
         return -2;
     }
 
-    rc = connect(fd, (struct sockaddr *)&addr, sizeof(addr));
+    int32_t rc = connect(fd, (struct sockaddr *)&addr, sizeof(addr));
     if (rc != 0 && errno != EINPROGRESS) {
         close(fd);
         return -3;
     }
+
     if (rc != 0) {
         memset(&pfd, 0, sizeof(pfd));
         pfd.fd = fd;
@@ -56,8 +53,8 @@ int32_t connect_send(const char *host, uint16_t port, const char *line) {
         }
     }
 
-    length = strlen(line);
-    sent = send(fd, line, length, MSG_NOSIGNAL);
+    size_t length = strlen(line);
+    ssize_t sent = send(fd, line, length, MSG_NOSIGNAL);
     if (sent < 0 || (size_t)sent != length) {
         close(fd);
         return -6;
@@ -75,7 +72,6 @@ int32_t send_to_peer(RaftNode *node, uint32_t peer_id, const char *line) {
 }
 
 static int32_t build_append_locked(RaftNode *node, Peer *peer, char *out, uint32_t out_size) {
-    uint32_t next_index;
     uint32_t prev_index;
     uint32_t prev_term;
     RaftLogEntry *entry;
@@ -83,10 +79,12 @@ static int32_t build_append_locked(RaftNode *node, Peer *peer, char *out, uint32
     if (peer->next_index <= 0) {
         peer->next_index = (int32_t)node->log_count + 1;
     }
-    next_index = (uint32_t)peer->next_index;
+
+    uint32_t next_index = (uint32_t)peer->next_index;
     if (next_index == 0) {
         next_index = 1;
     }
+
     if (next_index <= node->log_count) {
         entry = &node->log[next_index - 1u];
         prev_index = entry->index - 1u;
@@ -408,20 +406,17 @@ static void read_connection(RaftNode *node, int32_t fd) {
 void *network_loop(void *arg) {
     RaftNode *node = (RaftNode *)arg;
     struct epoll_event events[64];
-    int32_t count;
-    int32_t i;
-    int32_t fd;
 
     while (node->running != 0) {
-        count = epoll_wait(node->epoll_fd, events, 64, 200);
+        int32_t count = epoll_wait(node->epoll_fd, events, 64, 200);
         if (count < 0) {
             if (errno == EINTR) {
                 continue;
             }
             break;
         }
-        for (i = 0; i < count; ++i) {
-            fd = events[i].data.fd;
+        for (int32_t i = 0; i < count; ++i) {
+            int32_t fd = events[i].data.fd;
             if (fd == node->server_fd) {
                 accept_connections(node);
                 continue;

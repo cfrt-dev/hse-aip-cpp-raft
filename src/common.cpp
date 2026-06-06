@@ -80,8 +80,7 @@ KvOp op_from_name(const char *name) {
 }
 
 Peer *find_peer(RaftNode *node, uint32_t id) {
-    uint32_t i;
-    for (i = 0; i < node->peer_count; ++i) {
+    for (uint32_t i = 0; i < node->peer_count; ++i) {
         if (node->peers[i].id == id) {
             return &node->peers[i];
         }
@@ -90,13 +89,11 @@ Peer *find_peer(RaftNode *node, uint32_t id) {
 }
 
 int32_t add_peer_locked(RaftNode *node, uint32_t id, const char *host, uint16_t port) {
-    Peer *peer;
-
     if (node == NULL || id == 0 || id == node->id || host == NULL || host[0] == '\0' || port == 0) {
         return -1;
     }
 
-    peer = find_peer(node, id);
+    Peer *peer = find_peer(node, id);
     if (peer != NULL) {
         copy_text(peer->host, sizeof(peer->host), host);
         peer->port = port;
@@ -118,18 +115,15 @@ int32_t add_peer_locked(RaftNode *node, uint32_t id, const char *host, uint16_t 
 }
 
 int32_t remove_peer_locked(RaftNode *node, uint32_t id) {
-    uint32_t i;
-    uint32_t j;
-
     if (node == NULL || id == 0 || id == node->id) {
         return -1;
     }
 
-    for (i = 0; i < node->peer_count; ++i) {
+    for (uint32_t i = 0; i < node->peer_count; ++i) {
         if (node->peers[i].id != id) {
             continue;
         }
-        for (j = i + 1u; j < node->peer_count; ++j) {
+        for (uint32_t j = i + 1u; j < node->peer_count; ++j) {
             node->peers[j - 1u] = node->peers[j];
         }
         if (node->peer_count > 0) {
